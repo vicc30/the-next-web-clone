@@ -1,3 +1,43 @@
 /*
 * Styles for The next web
 */
+
+/*General rules*/
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+/* Navbar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: #f7f8f8;
+  box-shadow: 0 0 48px rgb(0 0 0 / 15%);
+}
+
+@media only screen and (max-width: 600px) {
+  nav {
+    justify-content: start;
+  }
+  .nav-li,
+  .mail-icon {
+    display: none;
+  }
+}
+
+nav .logo-nav svg {
+  min-width: 4em;
+}
+
+.nav-li li {
+  display: inline;
+  margin: 0 1rem;
+  font-size: 0.9rem;
+  color: #505666;
+  text-transform: uppercase;
+}
