@@ -20,7 +20,7 @@ nav {
   box-shadow: 0 0 48px rgb(0 0 0 / 15%);
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 650px) {
   nav {
     justify-content: start;
   }
@@ -40,4 +40,34 @@ nav .logo-nav svg {
   font-size: 0.9rem;
   color: #505666;
   text-transform: uppercase;
+}
+
+/* Main head */
+
+.main-head {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 5em 10em;
+}
+
+.main-head svg {
+  min-width: 12em;
+}
+
+.main-head h2 {
+  font-size: 2em;
+}
+
+@media only screen and (max-width: 800px) {
+  .main-head {
+    flex-direction: column;
+    align-items: center;
+  }
+  .main-head svg {
+    max-width: 15rem;
+  }
+  .main-head h2 {
+    font-size: 100%;
+  }
 }
