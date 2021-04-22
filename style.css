@@ -3,7 +3,6 @@
 */
 
 /*General rules*/
-
 *,
 *::before,
 *::after {
@@ -19,7 +18,6 @@ nav {
   background-color: #f7f8f8;
   box-shadow: 0 0 48px rgb(0 0 0 / 15%);
 }
-
 @media only screen and (max-width: 650px) {
   nav {
     justify-content: start;
@@ -29,11 +27,9 @@ nav {
     display: none;
   }
 }
-
 nav .logo-nav svg {
   min-width: 4em;
 }
-
 .nav-li li {
   display: inline;
   margin: 0 1rem;
@@ -43,7 +39,6 @@ nav .logo-nav svg {
 }
 
 /* Main head */
-
 .main-head {
   display: flex;
   flex-direction: row;
@@ -57,6 +52,7 @@ nav .logo-nav svg {
 
 .main-head h2 {
   font-size: 2em;
+  color: #505666;
 }
 
 @media only screen and (max-width: 800px) {
@@ -70,4 +66,112 @@ nav .logo-nav svg {
   .main-head h2 {
     font-size: 100%;
   }
+}
+
+/*News*/
+.news {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 0.5rem;
+  height: 600px;
+  max-width: 1300px;
+  margin: auto;
+}
+.container-1 {
+  grid-row: span 3;
+  grid-column: span 2;
+}
+.container-2 {
+  grid-row: span 2;
+  grid-column: span 1;
+}
+.container-3 {
+  grid-column-start: 3;
+  grid-column-end: -5;
+  grid-row-end: 6;
+  grid-row: span 2;
+}
+.container-4 {
+  grid-column-start: 3;
+  grid-row-start: 3;
+  grid-column-end: 5;
+  grid-row-end: -1;
+}
+/*Grid backgrounds*/
+.space {
+  background: linear-gradient(180deg, transparent 0, #000),
+    url(./images/helicopter.jpg) center;
+}
+.shift {
+  background: linear-gradient(180deg, transparent 0, #000),
+    url(./images/Opel-Manta-hed.jpg);
+}
+.neural {
+  background: linear-gradient(180deg, transparent 0, #000),
+    url(./images/EU-Vesthager-hed.jpg);
+}
+.more {
+  background: linear-gradient(180deg, transparent 0, #000),
+    url(./images/next_home-promo.jpg);
+}
+.video {
+  background: linear-gradient(180deg, transparent 0, #000),
+    url(./images/gif_2-3.gif);
+}
+.containers div {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  contain: content;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s;
+  background-size: 135%;
+  -webkit-transition: all 0.3s ease-in-out;
+}
+.container-3 .more {
+  justify-content: center;
+  text-align: center;
+}
+.containers div:hover {
+  cursor: pointer;
+  background-size: 132%;
+}
+.containers p,
+.containers h3 {
+  color: #fff;
+  padding: 0 2rem 1rem 2rem;
+}
+p.subtitle {
+  text-transform: uppercase;
+  font-size: 0.8em;
+}
+h3.title-big {
+  font-size: 2.4em;
+  font-weight: 600;
+}
+h3.title-small {
+  font-size: 1.2em;
+  font-weight: 600;
+}
+.more p {
+  font-size: 1.4em;
+  font-weight: 600;
+}
+.more button {
+  max-width: 150px;
+  margin: 0 auto;
+  background-color: transparent;
+  color: #fff;
+  border-style: none;
+  cursor: pointer;
+  border: solid 1px #fff;
+  padding: 1.5em;
+  border-radius: 2em;
+  text-transform: uppercase;
+  font-size: 0.7em;
+  font-weight: 600;
 }
