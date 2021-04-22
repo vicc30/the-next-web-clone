@@ -45,16 +45,15 @@ nav .logo-nav svg {
   justify-content: space-between;
   margin: 5em 10em;
 }
-
 .main-head svg {
   min-width: 12em;
 }
-
 .main-head h2 {
   font-size: 2em;
   color: #505666;
+  min-width: 200px;
+  text-align: center;
 }
-
 @media only screen and (max-width: 800px) {
   .main-head {
     flex-direction: column;
@@ -97,6 +96,51 @@ nav .logo-nav svg {
   grid-row-start: 3;
   grid-column-end: 5;
   grid-row-end: -1;
+}
+@media only screen and (max-width: 800px) {
+  .news {
+    min-height: 700px;
+    max-height: 900px;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    padding: 0 1rem;
+  }
+  .container-1 {
+    grid-column: span 4;
+    grid-row: span 2;
+  }
+  .container-2,
+  .container-3,
+  .container-4 {
+    grid-column: span 2;
+    grid-row: span 1;
+  }
+  div.containers h3,
+  div.containers p {
+    font-size: 1rem;
+  }
+  div.more button {
+    padding: 0.5rem;
+  }
+  .container-3 {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 3;
+  }
+  .containers .more {
+    background-size: cover;
+  }
+  .containers div:hover {
+    background-size: cover !important;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .news {
+    display: block;
+    padding: 0;
+  }
+  .containers {
+    height: 200px;
+  }
 }
 /*Grid backgrounds*/
 .space {
