@@ -219,3 +219,43 @@ h3.title-small {
   font-size: 0.7em;
   font-weight: 600;
 }
+
+/* Popular */
+
+section .popular {
+  background-color: #f7f8f8;
+  min-height: 250px;
+  margin: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.popular h2 {
+  font-size: 1.8em;
+  text-transform: uppercase;
+  padding: 2rem 0;
+}
+.list {
+  display: flex;
+  margin: 0 4rem;
+}
+.list-item {
+  display: flex;
+  flex-grow: 1;
+  flex-basis: 0;
+  margin: 0 1rem;
+  font-weight: 600;
+}
+.list-item .li-text:hover {
+  text-decoration: underline rgb(204 0 153 / 43%);
+  cursor: pointer;
+}
+.li-number {
+  font-size: 2.5rem;
+  line-height: 0.7;
+  padding-right: 0.7rem;
+  font-weight: 100;
+  color: #cc0099;
+}
