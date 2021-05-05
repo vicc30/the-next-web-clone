@@ -137,7 +137,7 @@ nav .logo-nav svg {
   .news {
     display: block;
     padding: 0;
-    margin:0
+    margin: 0;
   }
   .containers {
     height: 200px;
@@ -267,4 +267,46 @@ section .popular {
     margin: 14rem 1rem 5rem 1rem;
     line-height: 2;
   }
+}
+
+/* Latest news section */
+.container-latest {
+  max-width: 1310px;
+  margin: auto;
+}
+.latest {
+  margin: 0 4rem;
+}
+.latest h2 {
+  font-size: 3em;
+}
+.latest button {
+  display: flex;
+  margin: auto;
+}
+.container-stories {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 25%;
+  flex-grow: 1;
+  align-items: center;
+  gap: 0.8rem;
+}
+@media only screen and (max-width: 1310px) {
+  .container-latest {
+    max-width: 1010px;
+  }
+}
+@media only screen and (max-width: 1010px) {
+  .container-latest {
+    max-width: 720px;
+  }
+}
+@media only screen and (max-width: 710px) {
+  .container-latest {
+    max-width: 420px;
+  }
+}
+.storie {
+  max-width: 285px;
 }
