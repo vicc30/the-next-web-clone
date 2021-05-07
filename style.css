@@ -133,11 +133,14 @@ nav .logo-nav svg {
     background-size: cover !important;
   }
 }
-@media (max-width: 650px) {
+@media (max-width: 500px) {
   .news {
     display: block;
     padding: 0;
-    margin: 0;
+    margin: auto;
+    max-height: fit-content;
+    min-height: auto;
+    height: 1000px;
   }
   .containers {
     height: 200px;
@@ -336,11 +339,6 @@ section .popular {
   max-width: 285px;
   line-height: 1.5;
 }
-@media (maxwidth: 650px) {
-  .storie {
-    margin: auto;
-  }
-}
 .storie p {
   font-weight: 700;
 }
@@ -358,9 +356,15 @@ p.time {
   justify-content: space-evenly;
   padding: 7rem 0;
   background-color: #f7f8f8;
-  overflow-x: overlay;
-  overflow-y: hidden;
-  white-space: nowrap;
+}
+@media (max-width:1200px) {
+  .channels-container{
+    overflow-x: overlay;
+    overflow-y: hidden;
+    flex-direction: row;
+    padding: 4rem 0;
+    justify-content: end;
+  }
 }
 .channels-container img {
   max-width: 120px;
@@ -375,6 +379,11 @@ p.time {
   text-align: center;
   color: #fff;
   padding: 0 1rem;
+}
+@media (max-width:650px) {
+  .channel{
+    min-width: 200px;
+  }
 }
 .channel-1 {
   background: url(./images/bg-1.webp);
