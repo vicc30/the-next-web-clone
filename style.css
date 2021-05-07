@@ -267,8 +267,11 @@ section .popular {
 @media only screen and (max-width: 650px) {
   .list {
     flex-direction: column;
-    margin: 14rem 1rem 5rem 1rem;
+    margin: 3rem;
     line-height: 2;
+  }
+  .popular h2 {
+    padding: 3rem 0;
   }
 }
 
@@ -349,16 +352,29 @@ p.time {
 }
 
 /*Channels styles*/
+.channels{
+  background-color: #f7f8f8;
+  display: flex;
+  flex-direction: column;
+}
+.channel-h {
+  margin: 2rem auto 0 auto;
+  font-size: 3rem;
+}
+@media (max-width:1200px) {
+  .channel-h {
+    margin: 2rem 0 0 0;
+  }
+}
 .channels-container {
   display: flex;
   flex-grow: 1;
   flex-basis: 0;
   justify-content: space-evenly;
   padding: 7rem 0;
-  background-color: #f7f8f8;
 }
-@media (max-width:1200px) {
-  .channels-container{
+@media (max-width: 1200px) {
+  .channels-container {
     overflow-x: overlay;
     overflow-y: hidden;
     flex-direction: row;
@@ -380,8 +396,8 @@ p.time {
   color: #fff;
   padding: 0 1rem;
 }
-@media (max-width:650px) {
-  .channel{
+@media (max-width: 650px) {
+  .channel {
     min-width: 200px;
   }
 }
